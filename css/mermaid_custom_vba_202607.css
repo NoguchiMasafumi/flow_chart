@@ -1,0 +1,58 @@
+body { font-family: sans-serif; padding: 15px; background: #fafafa; margin: 0; }
+.title { font-size: 18px; font-weight: bold; color: #333; margin-bottom: 12px; text-align: left; }
+
+.mermaid {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  overflow-x: auto;
+}
+
+.mermaid svg {
+  max-width: none !important;
+  display: block;
+  margin: 0 !important;
+}
+
+.mermaid .node .label { font-size: 11px !important; line-height: 1.15 !important; font-weight: 500; }
+.mermaid .edgeLabel { font-size: 10px !important; }
+.node { cursor: pointer; }
+
+.mermaid .node rect {
+  fill: #ffffff !important;
+  stroke: #5c7cfa !important;
+  stroke-width: 2px !important;
+  filter: drop-shadow(0 3px 5px rgba(0,0,0,0.08));
+}
+.mermaid .node polygon {
+  fill: #ffffff !important;
+  stroke: #fcc419 !important;
+  stroke-width: 2px !important;
+  filter: drop-shadow(0 3px 5px rgba(0,0,0,0.08));
+}
+.mermaid .node path {
+  fill: #ffffff !important;
+  stroke: #20c997 !important;
+  stroke-width: 2px !important;
+  filter: drop-shadow(0 3px 5px rgba(0,0,0,0.08));
+}
+
+#tooltip {
+  display: none;
+  position: absolute;
+  background: #333;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  z-index: 9999;
+  width: 500px !important;
+  min-width: 500px !important;
+  max-width: 500px !important;
+  box-sizing: border-box !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  pointer-events: none;
+}
